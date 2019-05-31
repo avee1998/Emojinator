@@ -9,19 +9,20 @@ this code helps you detect and predict emojis from gestures you make in webcam u
     1.  	Conv -> MaxPool -> Conv -> MaxPool -> Flatten -> Dense -> Dense ->O/P
 5. Due to some problems with my system i have used Theano Backend and Keras for the implementation.
 6. Division of generated dataset:
-  1. Train(12000 images) 
-  2. Test  (1199 images)  
+    1.      Train(12000 images) 
+    2.      Test  (1199 images)  
 7. Some add-ons:
-  1. One can add more layers.
-  2. More epochs(4 used) can be used.
-  3. Regularisation param(Dropout) can be tweaked to avoid overfitting.
-  4. More images can be generated for enhancement of accuracy.
+    1.      One can add more layers.
+    2.      More epochs(4 used) can be used.
+    3.      Regularisation param(Dropout) can be tweaked to avoid overfitting.
+    4.      More images can be generated for enhancement of accuracy.
 8. Procedure :
-1. First, you have to create a gesture database. For that, run generate_dataset.py. Enter the gesture name and gesture for that emoji.
-2. Repeat this for all the features you want. 
-3. Run gesture_to_csv.py for converting the images to a CSV file. 
-4. If you want to train the model, run train_model_emoji.py 
-5. Finally, run Predict_emoj.py for testing your model via webcam. 
+    1.      First, you have to create a gesture database. For that, run generate_dataset.py. Enter the gesture name and gesture for that emoji.
+    2.      Repeat this for all the features you want. 
+    3.      Run gesture_to_csv.py for converting the images to a CSV file. 
+    4.      If you want to train the model, run train_model_emoji.py 
+    5.      Finally, run Predict_emoj.py for testing your model via webcam. 
 Case:
 1. This project can be useful for getting insight to CNN based Deep Neural networks, also for a decent intuition to Opencv for image processing and optimise the task of training and generating the dataset.
 2. Given the rise of digital communication via text, emoji have become key to communicate emotions. In digital communication, emoji serve the purpose of translating emotions to express facial expressions.  
+    
