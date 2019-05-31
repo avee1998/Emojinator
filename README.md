@@ -6,16 +6,16 @@ this code helps you detect and predict emojis from gestures you make in webcam u
 2. For pre-processing we read the images in grayscale format for 2-D images rather than 3-D (if we read in RGB).
 3. We trained the model on images after resizing it to 50x50x1.
 4. The Basic Architecture of Project:
-4.a.  	Conv -> MaxPool -> Conv -> MaxPool -> Flatten -> Dense -> Dense ->O/P
+    1.  	Conv -> MaxPool -> Conv -> MaxPool -> Flatten -> Dense -> Dense ->O/P
 5. Due to some problems with my system i have used Theano Backend and Keras for the implementation.
 6. Division of generated dataset:
-6.a. Train(12000 images) 
-6.b. Test  (1199 images)  
+  1. Train(12000 images) 
+  2. Test  (1199 images)  
 7. Some add-ons:
-7.a. One can add more layers.
-7.b. More epochs(4 used) can be used.
-7.c. Regularisation param(Dropout) can be tweaked to avoid overfitting.
-7.d. More images can be generated for enhancement of accuracy.
+  1. One can add more layers.
+  2. More epochs(4 used) can be used.
+  3. Regularisation param(Dropout) can be tweaked to avoid overfitting.
+  4. More images can be generated for enhancement of accuracy.
 8. Procedure :
 1. First, you have to create a gesture database. For that, run generate_dataset.py. Enter the gesture name and gesture for that emoji.
 2. Repeat this for all the features you want. 
